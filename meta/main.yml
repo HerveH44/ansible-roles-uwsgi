@@ -1,0 +1,11 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: HerveH44
+  description: "Installs and configures UWSGI"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.4
+
+  galaxy_tags:
+    - networking

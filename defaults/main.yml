@@ -1,0 +1,5 @@
+---
+uwsgi_python2: yes
+uwsgi_dir: /web/uwsgi/
+uwsgi_log_dir: /web/log/
+uwsgi_emperor_log: "{{uwsgi_log_dir}}/uwsgi-emperor.log"

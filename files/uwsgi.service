@@ -1,0 +1,9 @@
+[Unit]
+Description=Lisp UWSGI service
+After=
+
+[Service]
+ExecStart=/lisp/start-uwsgi.sh
+
+[Install]
+WantedBy=multi-user.target

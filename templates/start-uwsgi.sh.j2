@@ -1,0 +1,5 @@
+if [ "" = "$(pgrep -f '^{{uwsgi_dir}}venv/bin/uwsgi')" ]; then
+    {{uwsgi_dir}}venv/bin/uwsgi --emperor {{uwsgi_dir}}vassals/ --daemonize {{uwsgi_log_dir}}uwsgi-emperor.log
+else
+    echo "Uwsgi emperor on python already started"
+fi

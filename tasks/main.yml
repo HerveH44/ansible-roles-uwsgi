@@ -6,7 +6,7 @@
     - build-essential 
   tags: [uwsgi]
 
-- name: UWSGI | Install specific python2 dependencies
+- name: UWSGI | Install specific python dependencies
   apt:
     name: "{{item}}"
   with_items:
@@ -20,7 +20,7 @@
     path: "{{ uwsgi_dir }}"
   tags: [uwsgi]
 
-- name: UWSGI | Install UWSGI for Python2
+- name: UWSGI | Install UWSGI for Python
   pip:
     name: uwsgi
     virtualenv: "{{uwsgi_dir}}/venv"
